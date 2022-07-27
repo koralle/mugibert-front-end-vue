@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:vue/vue3-strongly-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "browser": "true",
+    "ecmaVersion": "latest",
+    "extraFileExtensions": [".vue"],
+    "parser": { "js": "espree", "ts": "@typescript-eslint/parser", "<template>": "espree" },
+    "project": "./tsconfig.json",
+    "sourceType": "module",
+    "vueFeatures": {}
+  },
+  "plugins": [],
+  "rules": { "@typescript-eslint/await-thenable": "error" },
+  "ignorePatterns": ["vite.config.ts"]
+}

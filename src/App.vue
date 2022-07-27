@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MainPage from './page/MainPage.vue'
+</script>
 
 <template>
-  <h1>Mugibert</h1>
+  <MainPage></MainPage>
 </template>
 
-<style></style>
+<style scoped></style>
